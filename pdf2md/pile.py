@@ -175,7 +175,9 @@ class Pile(object):
             table.horizontals = included_horizontals
             table.texts = included_texts
 
-            tables.append(table)
+            if table.texts:
+                tables.append(table)
+
             visited.update(near_verticals)
         return tables
 
