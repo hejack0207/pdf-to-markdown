@@ -202,7 +202,7 @@ class Pile(object):
                     paragraphs[idx].texts.append(text)
                     break
 
-        paragraphs = filter(None, paragraphs)
+        # paragraphs = filter(None, paragraphs)
 
         return paragraphs
 
